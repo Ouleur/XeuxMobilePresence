@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--below line is to create preference category-->
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:key="nom_device"
+            android:title="@string/prefs_nom_device"
+            />
+        <EditTextPreference
+            android:key="adress_local"
+            android:title="@string/prefs_local_address"
+            android:defaultValue="http://127.0.0.1"
+            />
+        <EditTextPreference
+            android:key="adress_internet"
+            android:title="@string/prefs_internet_address"
+            android:defaultValue="http://127.0.0.1"
+
+            />
+        <ListPreference
+            android:defaultValue="30000"
+            android:dialogTitle="@string/temps"
+            android:entries="@array/pref_seek_values"
+            android:entryValues="@array/pref_duration"
+            android:key="@string/pref_seek_val"
+            android:summary="@string/seconds"
+            android:title="@string/temps"
+
+            />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/nombre_save"
+            android:entries="@array/pref_nombre_save_values"
+            android:entryValues="@array/pref_nombre"
+            android:key="@string/nombre_save_val"
+            android:summary="@string/seconds"
+            android:title="@string/nombre_save" />
+    </PreferenceCategory>
+</PreferenceScreen>

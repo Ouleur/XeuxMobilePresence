@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_info">
+
+    <TextView
+        android:id="@+id/textNiveau"
+        android:layout_width="263dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNiveau" />
+
+    <TextView
+        android:id="@+id/titleNiveau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="321dp"
+        android:text="@string/niveau"
+        app:layout_constraintBottom_toTopOf="@+id/textNiveau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFiliere" />
+
+    <TextView
+        android:id="@+id/textFiliere"
+        android:layout_width="263dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleFiliere" />
+
+    <TextView
+        android:id="@+id/titleFiliere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="325dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/fili_re"
+        app:layout_constraintBottom_toTopOf="@+id/textFiliere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDateNaissance" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="169dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/textMtle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:contentDescription="@string/student_img" />
+
+    <TextView
+        android:id="@+id/tittleMtle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="305dp"
+        android:layout_marginBottom="461dp"
+        android:text="@string/matricule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMtle"
+        android:layout_width="263dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="417dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleMtle" />
+
+    <TextView
+        android:id="@+id/titleNom"
+        android:layout_width="96dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="257dp"
+        android:text="Nom et prénoms"
+        app:layout_constraintBottom_toTopOf="@+id/textNom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMtle" />
+
+    <TextView
+        android:id="@+id/textNom"
+        android:layout_width="263dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleNom" />
+
+    <TextView
+        android:id="@+id/titleDateNaiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/date_de_naissance"
+        app:layout_constraintBottom_toTopOf="@+id/textDateNaissance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNom" />
+
+    <TextView
+        android:id="@+id/textDateNaissance"
+        android:layout_width="263dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleDateNaiss" />
+
+    <Button
+        android:id="@+id/lier_carte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/lier_la_carte"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNiveau" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
